@@ -26,6 +26,6 @@ public class Vendeur extends Commerciaux{
                 ", nbHeures=" + nbHeures +
                 ", salaire_brut=" + salaire_brut +
                 ", salaire_net=" + salaire_net +
-                '}';
+                '}' + "\n";
     }
 }

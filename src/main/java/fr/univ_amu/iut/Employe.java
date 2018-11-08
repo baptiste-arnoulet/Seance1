@@ -53,6 +53,10 @@ public class Employe {
                 ", nbHeures=" + nbHeures +
                 ", salaire_brut=" + salaire_brut +
                 ", salaire_net=" + salaire_net +
-                '}';
+                '}' + "\n";
+    }
+
+    public LocalDate getDate_embauche() {
+        return date_embauche;
     }
 }

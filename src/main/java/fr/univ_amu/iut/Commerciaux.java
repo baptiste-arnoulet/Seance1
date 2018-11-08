@@ -38,7 +38,7 @@ public class Commerciaux extends Employe {
                 ", nbHeures=" + nbHeures +
                 ", salaire_brut=" + salaire_brut +
                 ", salaire_net=" + salaire_net +
-                '}';
+                '}' + "\n";
     }
 
 

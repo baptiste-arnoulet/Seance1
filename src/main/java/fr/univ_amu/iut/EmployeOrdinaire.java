@@ -33,6 +33,6 @@ public class EmployeOrdinaire extends Employe {
                 ", nbHeures=" + nbHeures +
                 ", salaire_brut=" + salaire_brut +
                 ", salaire_net=" + salaire_net +
-                '}';
+                '}' + "\n";
     }
 }
