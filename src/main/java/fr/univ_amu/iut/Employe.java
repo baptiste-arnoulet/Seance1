@@ -1,8 +1,9 @@
 package fr.univ_amu.iut;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Employe {
+public class Employe implements Serializable {
     protected int num;
     protected int num_Secu;
     protected String nom;
