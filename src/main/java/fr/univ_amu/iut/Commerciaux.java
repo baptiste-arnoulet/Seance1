@@ -3,8 +3,8 @@ package fr.univ_amu.iut;
 import java.time.LocalDate;
 
 public class Commerciaux extends Employe {
-    private double chiffreAffaire;
-    private double tauxCommission;
+    protected double chiffreAffaire;
+    protected double tauxCommission;
 
     public Commerciaux(int num, int num_Secu, String nom, String prenom, int echelon, LocalDate date_naissance, LocalDate date_embauche, double base, double nbHeures, double chiffreaffaire, double tauxcommision) {
         super(num, num_Secu, nom, prenom, echelon, date_naissance, date_embauche, base, nbHeures);
@@ -15,7 +15,7 @@ public class Commerciaux extends Employe {
     }
 
     public int getSalaireBrutCommerciaux(double base, double chiffreAffaire, double tauxCommission) {
-        return salaire_brut = (int)base + (int)chiffreAffaire * (int)tauxCommission;
+        return salaire_brut = (int)base + (int)chiffreAffaire * (int)tauxCommission + 100;
     }
 
     public void negocierTransaction(){
@@ -40,4 +40,6 @@ public class Commerciaux extends Employe {
                 ", salaire_net=" + salaire_net +
                 '}';
     }
+
+
 }
