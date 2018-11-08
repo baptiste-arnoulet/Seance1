@@ -3,17 +3,17 @@ package fr.univ_amu.iut;
 import java.time.LocalDate;
 
 public class Employe {
-    private int num;
-    private int num_Secu;
-    private String nom;
-    private String prenom;
-    private int echelon;
-    private LocalDate date_naissance;
-    private LocalDate date_embauche;
-    private double base;
-    private double nbHeures;
-    private int salaire_brut;
-    private int salaire_net;
+    protected int num;
+    protected int num_Secu;
+    protected String nom;
+    protected String prenom;
+    protected int echelon;
+    protected LocalDate date_naissance;
+    protected LocalDate date_embauche;
+    protected double base;
+    protected double nbHeures;
+    protected int salaire_brut;
+    protected int salaire_net;
 
 
     public Employe(int num, int num_Secu, String nom, String prenom, int echelon, LocalDate date_naissance, LocalDate date_embauche, double base, double nbHeures) {
@@ -35,7 +35,7 @@ public class Employe {
         return salaire_brut;
     }
 
-    public int CalculSalaireNet(int salaire_brut){
+    protected int CalculSalaireNet(int salaire_brut){
         return salaire_net = salaire_brut * 80 / 100;
     }
 
